@@ -1,0 +1,29 @@
+/* Responsive */
+
+@media (max-width: 950px) {
+
+
+    html{
+        font-size: 10px;
+    }
+
+    .about .about-content,
+    .services .service-content,
+    .skill .skill-content,
+    .contact .contact-content {
+        flex-direction: column;
+    }
+
+    .about .about-section-right a {
+        padding: 5px;
+        margin:10px auto;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .sevice .sevice-section {
+        flex-direction: column;
+    }
+
+}
