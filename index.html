@@ -8,12 +8,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio</title>
-    <!-- <link rel="stylesheet" href="/static/css/index.css">
-    <link rel="stylesheet" href="/static/css/responsive.css"> -->
     <link rel="stylesheet" href="/index.css">
     <link rel="stylesheet" href="/responsive.css">
     <link rel="icon" href="/Gautamlogo.jpg">
-     <!-- Types Of Font(Design) -->
+    <!-- Types Of Font(Design) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
         integrity="sha512-u7ppO4TLg4v6EY8yQ6T6d66inT0daGyTodAi6ycbw9+/AU8KMLAF7Z7YGKPMRA96v7t+c7O1s6YCTGkok6p9ZA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -22,7 +20,7 @@
 <body>
     <header>
         <div class="container">
-            <nav>
+            <nav id="navbar">
                 <div class="menu">
                     <div class="heading">
                         <h1>portfolio.</h1>
@@ -34,7 +32,7 @@
                 <ul class="nav-list">
                     <li class="nav-items">
                         <a href="#home" class="nav-link">
-                            <img class="profile-pic nav-link" src="/Gautam2.jpg" alt="">
+                            <img class="profile-pic nav-link" src="/static/img/Gautam2.jpg" alt="">
                             <span class="caption nav-link"> Gautam</span>
                         </a>
                     </li>
@@ -61,11 +59,11 @@
             </nav>
         </div>
     </header>
-    
+
     <div class="scroll-up-btn">
             <i class="fas fa-angle-up"></i>
     </div>
-    
+
     <main>
         <section class="home" id="home">
             <div class="container">
@@ -93,7 +91,7 @@
                 <div class="about-content">
                     <div class="about-section-left">
                         <div class="about-img about-left">
-                            <img class="about-pic" src="/Gautam4.jpg" alt="">
+                            <img class="about-pic" src="/static/img/Gautam4.jpg" alt="">
                         </div>
                     </div>
                     <div class="about-section-right">
@@ -272,7 +270,8 @@
                                 <input type="text" placeholder="Subject" name="sub" required>
                             </div>
                             <div class="field textarea">
-                                <textarea cols="30" rows="10" name="message" placeholder="Message.." required></textarea>
+                                <textarea cols="30" rows="10" name="message" placeholder="Message.."
+                                    required></textarea>
                             </div>
                             <div class="button-area">
                                 <button type="submit">Send message</button>
@@ -305,11 +304,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
         integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
         crossorigin="anonymous"></script>
-    
-     <!-- typing automatic  -->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- typing automatic  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" integrity="sha512-3J8teBiHrSyaaRBajZyIEtpDsXdPq1gsznKWIVb5CnorQuFhjWGhWe54z8YNnHHr7MZuExb9m5kvf964HiT1Sw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
    
-    <script src="/index.js"></script>
+
+   <script src="/index.js"></script> 
 </body>
 
 </html>
