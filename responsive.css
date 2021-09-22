@@ -1,29 +1,133 @@
 /* Responsive */
 
-@media (max-width: 950px) {
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+@media (max-width: 1050px) {
 
 
-    html{
-        font-size: 10px;
+    html {
+        font-size: 15px;
     }
 
     .about .about-content,
     .services .service-content,
-    .skill .skill-content,
-    .contact .contact-content {
+    .skill .skill-content {
         flex-direction: column;
+    }
+
+    .skill .skill-content{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        font-size: 1.2rem;
+    }
+
+    .skill .skill-content .skill-section-left ,
+    .skill .skill-content .skill-section-right {
+        width: 100%;
+    } 
+
+    .skill .skill-content .skill-section-left {
+        /* text-align: center; */
+        padding: 10px 0px;
     }
 
     .about .about-section-right a {
         padding: 5px;
-        margin:10px auto;
+        margin: 10px auto;
+    }
+
+    .sevice .sevice-section .card {
+        width: 100%;
+        flex-wrap: wrap;
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
+
+    /* html {
+        font-size: 13px;
+    } */
 
     .sevice .sevice-section {
         flex-direction: column;
+    }
+
+    .sevice .sevice-section .card {
+        font-size: 1.2rem;
+        width: 80vw;
+    }
+
+    .contact .contact-content {
+        flex-direction: column;
+    }
+
+    .contact .contact-content {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        font-size: 1.2rem;
+    }
+
+    .contact .contact-content .contact-section-left ,
+    .contact .contact-content .contact-section-right {
+        width: 100%;
+    } 
+
+
+    .contact .contact-content .column {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+
+    .contact .contact-section-right form .fields {
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    #navbar .heading h1 {
+        margin-left: 1rem;
+    }
+
+    .sevice .sevice-section {
+        flex-direction: column;
+    }
+
+    .sevice .sevice-section .card {
+        font-size: 1.2rem;
+        width: 80vw;
+    }
+
+}
+
+
+@media (max-width: 350px) {
+
+    html {
+        font-size: 13px;
+    }
+
+}
+
+@media (max-width: 270px) {
+
+    html {
+        font-size: 10px;
+    }
+
+}
+
+@media (max-width: 250px) {
+
+    .sevice .sevice-section .card {
+        width: 80vw;
     }
 
 }
