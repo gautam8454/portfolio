@@ -1,5 +1,6 @@
 // Function expression to select elements
 
+
 const selectElement = (s) => document.querySelector(s);
 // queryselector is use for selecting the first mentiond tag
 
@@ -18,9 +19,8 @@ selectElement(".menu-icon").addEventListener("click", () => {
     if (link.style.animation) {
       link.style.animation = "";
     } else {
-      link.style.animation = `navLinkFade 0.5s ease forwards ${
-        index / 7 + 0.5
-      }s`;
+      link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5
+        }s`;
       console.log(index / 7 + 0.5)
     }
   });
@@ -39,12 +39,41 @@ navLinks.forEach((link) => {
       if (link.style.animation) {
         link.style.animation = "";
       } else {
-        link.style.animation = `navLinkFade 0.5s ease forwards ${
-          index / 7 + 0.5
-        }s`;
+        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5
+          }s`;
       }
     });
 
     selectElement(".menu-icon").classList.toggle("toggle");
   });
 });
+
+$(window).scroll(function() {
+  if ($(this).scrollTop() > 100) {
+    $('.scroll-up-btn').fadeIn();
+  } else {
+    $('.scroll-up-btn').fadeOut();
+  }
+});
+
+// slide-up script
+$('.scroll-up-btn').click(function(){
+  $('html').animate({scrollTop: 0});
+  // removing smooth scroll on slide-up button click
+  $('html').css("scrollBehavior", "auto");
+});
+
+  // typing text animation script
+  var typed = new Typed(".typing1", {
+    strings: ["Developer", "Blogger", "Designer"],
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true
+  });
+
+  var typed = new Typed(".typing2", {
+    strings: ["Developer", "Blogger", "Designer"],
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true
+  });
